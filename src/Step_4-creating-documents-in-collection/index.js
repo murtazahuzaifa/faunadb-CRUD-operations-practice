@@ -11,7 +11,7 @@ const q = faunadb.query; // creating a query variable
 
         try {
             // for creating single document
-            /*var result = await client.query(
+            var result = await client.query(
                 q.Create(
                     q.Collection('products'),
                     { data: { 
@@ -20,10 +20,10 @@ const q = faunadb.query; // creating a query variable
                         price: {amount:430, currency:'pkr'}
                      } },
                 )
-            );*/
+            );
 
             // for creating multiple document
-            var result = await client.query(
+            /*var result = await client.query(
                 q.Map([
                     {
                         code: 2,
@@ -46,7 +46,7 @@ const q = faunadb.query; // creating a query variable
                         q.Create(q.Collection('products'), { data: q.Var("product entry") })
                     )
                 )
-            );
+            );*/
 
             console.log(result);
         }
