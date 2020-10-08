@@ -12,6 +12,7 @@
   "author": "murtaza",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "faunadb": "^3.0.1"
   }
 }
