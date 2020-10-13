@@ -24,6 +24,14 @@ const q = faunadb.query; // creating a query variable
                 )
             );
 
+            // retriving all documents from a collection
+            /*const result = await client.query(
+                q.Map(
+                  q.Paginate(q.Documents(q.Collection('products'))),
+                  q.Lambda(ref => q.Get(ref))
+                )
+              )*/
+
             console.log(result);
         }
         catch (error) {
